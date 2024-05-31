@@ -15,10 +15,6 @@ Original dataset: Dataset: "California House Price" https://www.kaggle.com/datas
 
 
 
-
-
-
-
 Based on "Machine Learning for Beginners 2024"
 https://www.youtube.com/watch?v=43Bbjwy2f5I
 

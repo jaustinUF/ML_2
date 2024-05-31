@@ -2,6 +2,7 @@
 - Project: train and test linear regression model to predict house price from features in a census dataset.
 - Project dataset: housing.csv
 - Original dataset: Dataset: "California House Price" https://www.kaggle.com/datasets/shibumohapatra/house-price
+zzz
 
 
 

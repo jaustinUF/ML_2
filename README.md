@@ -18,12 +18,22 @@ After an initial view of the data and the data set information:
 - converted categorical feature to ‘dummy’ binary features, using pandas . get_dummies
 	-  merge dummy features with rest of data and drop ne dummy to eliminate "perfect multicolinearity"
 #### OLS model training (lin_reg_CA_ house_prices.py)
-text
+After data preparation:
+- split data set: features (independent variables) -> x, target (dependent variable) -> y
+- split x and y into train and test datasets
+- add ‘const’ column to x_train (to force OLS to calculate intercept)
+- fit data to statsmodels.api OLS model
+- test predictive accuracy
+- test linear regression analysis assumptions: linearity, random sampling, exogeneity, homoscedasticity
 #### Scikit-learn (sklearn) model training (lin_reg_CA_ with_sklearn.py)
-text
+After data preparation:
+- scale and transforme x_train
+- fit data to sklearn LinearRegression model
+- test predictive accuracy
 
+Note that neither model shows good predictive accuracy (~ 60%). Likely cause: data wasn’t very linear, and violated the Homoscedasticity assumption (seen in scatter plots). The tutorial leaned toward causal/interpretive analysis (hence the OLS model), rather than predictive analysis (scikit-learn model).
 
-Based on "Machine Learning for Beginners 2024" https://www.youtube.com/watch?v=43Bbjwy2f5I
+Adapted from "Machine Learning for Beginners 2024" https://www.youtube.com/watch?v=43Bbjwy2f5I
 
 
 
